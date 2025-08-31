@@ -1,33 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>HTML Ticker Left to Right</title>
-  <style>
-    .ticker-container {
-      width: 100%;
-      overflow: hidden;
-      background: #222;
-      height: 40px;
-      position: relative;
-    }
-    .ticker-text {
-      position: absolute;
-      white-space: nowrap;
-      color: #fff;
-      font-size: 1.2em;
-      animation: tickerMove 10s linear infinite;
-      left: -100%;
-    }
-    @keyframes tickerMove {
-      from { left: -100%; }
-      to { left: 100%; }
-    }
-  </style>
-</head>
-<body>
-  <div class="ticker-container">
-    <div class="ticker-text">
-      This is a sample ticker moving from left to right!
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>HTML Ticker Left to Right</title>
+    <style>
+        .ticker-container {
+        width: 100%;
+        overflow: hidden;
+        background: #222;
+        height: 40px;
+        position: relative;
+        }
+        .ticker-text {
+        position: absolute;
+        white-space: nowrap;
+        color: #fff;
+        font-size: 1.2em;
+        animation: tickerMove 25s linear infinite;
+        left: -100%;
+        }
+        @keyframes tickerMove {
+        from { left: -100%; }
+        to { left: 100%; }
+        }
+    </style>
+    </head>
+    <body>
+    <div class="ticker-container">
+        <div class="ticker-text">
+        This is a sample ticker moving from left to right!
+        </div>
     </div>
-  </div>
